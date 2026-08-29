@@ -1400,7 +1400,17 @@
               "cell": "6f80db8d-1c4c-4b73-aacc-a2e7ffd5f4fa",
               "port": "c0dc19af-f89a-4911-bb13-d014fb2bcfc6"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",

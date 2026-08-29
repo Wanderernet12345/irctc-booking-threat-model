@@ -95,8 +95,8 @@
           },
           {
             "position": {
-              "x": 726,
-              "y": -774.9999999999994
+              "x": 614,
+              "y": -714.9999999999994
             },
             "size": {
               "width": 300,
@@ -127,8 +127,8 @@
           },
           {
             "position": {
-              "x": 1064,
-              "y": -290
+              "x": 954,
+              "y": -270
             },
             "size": {
               "width": 340,
@@ -186,7 +186,9 @@
                 "658feec4-5ae4-44d4-bd58-219d294ca73a",
                 "0deb799e-5500-4626-8013-1badea1698b8",
                 "0d46ec34-53bd-46b8-a69e-5f4124f55db5",
-                "a8dcd2a6-6ff4-443b-a991-57976a1bb0c1"
+                "a8dcd2a6-6ff4-443b-a991-57976a1bb0c1",
+                "5f171bab-7a3a-4c00-a263-6e4f86770b5e",
+                "35be8f57-3d3d-4b88-a6bc-d69cef435c9d"
               ],
               "containedElements": [
                 "3ee5e6b8-24ce-42c8-8dce-110cf566ba28",
@@ -198,12 +200,12 @@
           },
           {
             "position": {
-              "x": 471,
-              "y": 492
+              "x": 510,
+              "y": 470.0000000000001
             },
             "size": {
-              "width": 128,
-              "height": 60
+              "width": 320,
+              "height": 210
             },
             "attrs": {
               "label": {
@@ -212,16 +214,21 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "d65bc8ed-4e60-4ac6-a5ed-047d1eff9060",
             "zIndex": -1,
+            "id": "d65bc8ed-4e60-4ac6-a5ed-047d1eff9060",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "App ↔ Admin Interface",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
+              "crossingFlows": [
+                "5f171bab-7a3a-4c00-a263-6e4f86770b5e",
+                "35be8f57-3d3d-4b88-a6bc-d69cef435c9d"
+              ],
+              "containedElements": [
+                "a03f4cd0-fbe6-4094-bfa7-f26102139acf"
+              ]
             }
           },
           {
@@ -475,8 +482,8 @@
                 "text": "Auth Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -573,12 +580,41 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "7bf5f059-7d9c-4187-98b4-8af5b99960da",
+                  "title": "T1 - Credential Stuffing / Account Takeover",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "No MFA, weak lockout policy. Attacker uses leaked password lists against login endpoint to achieve account takeover.",
+                  "mitigation": "MFA, breach-password blocklist check, progressive lockout with exponential backoff",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -703,8 +739,8 @@
           },
           {
             "position": {
-              "x": 764,
-              "y": -245
+              "x": 684,
+              "y": -240.00000000000006
             },
             "size": {
               "width": 160,
@@ -1528,82 +1564,7 @@
                 "x": 120,
                 "y": -170
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -1709,12 +1670,8 @@
             },
             "vertices": [
               {
-                "x": 470,
-                "y": -400
-              },
-              {
-                "x": 560,
-                "y": -410
+                "x": 450,
+                "y": -350
               }
             ]
           },
@@ -1975,20 +1932,16 @@
             },
             "vertices": [
               {
-                "x": 1200,
-                "y": 70
+                "x": 1070,
+                "y": 10
               },
               {
-                "x": 1030,
-                "y": 90
+                "x": 840,
+                "y": 10
               },
               {
-                "x": 960,
-                "y": 90
-              },
-              {
-                "x": 844,
-                "y": 20
+                "x": 764,
+                "y": -20
               }
             ]
           },
@@ -2042,9 +1995,119 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Admin Data Access",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "2976c3ef-81b3-4169-831a-afa45dc9b81d",
+                "d65bc8ed-4e60-4ac6-a5ed-047d1eff9060"
+              ]
+            },
+            "labels": [
+              "Admin Data Access"
+            ],
+            "id": "5f171bab-7a3a-4c00-a263-6e4f86770b5e",
+            "source": {
+              "cell": "a03f4cd0-fbe6-4094-bfa7-f26102139acf",
+              "port": "497b8ca5-5e48-43c0-a50f-c5f52791f15d"
+            },
+            "target": {
+              "cell": "bfa8920d-6c44-47e0-a887-f145af97b3a7",
+              "port": "4d421d88-af03-4a35-bdf5-702a4983a330"
+            },
+            "vertices": [
+              {
+                "x": 659,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Admin Data Access",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "2976c3ef-81b3-4169-831a-afa45dc9b81d",
+                "d65bc8ed-4e60-4ac6-a5ed-047d1eff9060"
+              ]
+            },
+            "labels": [
+              "Admin Data Access"
+            ],
+            "id": "35be8f57-3d3d-4b88-a6bc-d69cef435c9d",
+            "source": {
+              "cell": "a03f4cd0-fbe6-4094-bfa7-f26102139acf",
+              "port": "a4bf3116-cbc3-43be-bb3b-1bf7b74c908e"
+            },
+            "target": {
+              "cell": "3ee5e6b8-24ce-42c8-8dce-110cf566ba28",
+              "port": "4d421d88-af03-4a35-bdf5-702a4983a330"
+            },
+            "vertices": [
+              {
+                "x": 520,
+                "y": 460
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 781,
-              "y": -489.99999999999983
+              "x": 671,
+              "y": -429.99999999999983
             },
             "size": {
               "width": 190,
@@ -2163,8 +2226,8 @@
           },
           {
             "position": {
-              "x": 781,
-              "y": -721
+              "x": 671,
+              "y": -661
             },
             "size": {
               "width": 190,
@@ -2182,6 +2245,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -2265,7 +2329,6 @@
               ]
             },
             "id": "48a313f2-5cd6-4f5c-86ed-ca2958e39b25",
-            "zIndex": 13,
             "data": {
               "type": "tm.Actor",
               "name": "PRS \nLegacy \nSystem",
@@ -2280,8 +2343,8 @@
           },
           {
             "position": {
-              "x": 1134,
-              "y": -235
+              "x": 1026,
+              "y": -210.00000000000006
             },
             "size": {
               "width": 200,
@@ -2299,6 +2362,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -2382,7 +2446,6 @@
               ]
             },
             "id": "45b02b77-6e6d-4b1f-b849-2e826977abff",
-            "zIndex": 14,
             "data": {
               "type": "tm.Actor",
               "name": "3rd-Party\nPayment\nGateway",
@@ -2397,12 +2460,12 @@
           },
           {
             "position": {
-              "x": 500,
-              "y": 490
+              "x": 574,
+              "y": 520.0000000000009
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 170,
+              "height": 140
             },
             "attrs": {
               "text": {
@@ -2416,6 +2479,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -2499,7 +2563,6 @@
               ]
             },
             "id": "a03f4cd0-fbe6-4094-bfa7-f26102139acf",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "Admin/Agent Portal",
@@ -2520,6 +2583,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 5
   }
 }
